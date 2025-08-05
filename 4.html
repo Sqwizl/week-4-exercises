@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <h2>Sign Up Form</h2>
+
+    <p>
+        The placeholder attribute is to display hint text within an input box eg:choose a secure password.
+    </p>
+
+    <form action="/signup" method="post">
+
+        <!-- Text input -->
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" placeholder="Enter your username" /><br /><br />
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="you@example.com" /><br /><br />
+
+        <!-- Password input -->
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" placeholder="Choose a secure password" /><br /><br />
+
+        <input type="submit" value="Register" />
+
+    </form>
+
+    <h3>Readonly</h3>
+    <form action="/submit-info" method="post">
+    
+    <!-- Text input with readonly -->
+    <label for="userid">User ID:</label><br />
+    <input type="text" id="userid" name="userid" value="SQW!ZL" readonly /><br /><br />
+    
+    <!-- Email input with readonly -->
+    <label for="email">Registered Email:</label><br />
+    <input type="email" id="email" name="email" value="user@example.com" readonly /><br /><br />
+
+    <!-- Editable field -->
+    <label for="comment">Comment:</label><br />
+    <input type="text" id="comment" name="comment" placeholder="Write your comment here" /><br /><br />
+
+    <input type="submit" value="Submit" />
+    
+  </form>
+
+</body>
+</html>
