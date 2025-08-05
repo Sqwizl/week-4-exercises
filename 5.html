@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Input Validation HTML5</title>
+</head>
+
+<body>
+
+    <h2> Registration Form</h2>
+
+    <form action="/submit" method="post">
+
+        <label for="username">Username:</label> <br /><br />
+        <input type="text" id="username" name="username" minlength="4" maxlength="10" placeholder="4-10 characters"
+            required>
+        <br /><br />
+        <label for="email">Email:</label> <br /> <br />
+        <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+
+        <input type="button" input type="submit" value="Register">
+    </form>
+    <div>
+        <p>HTML5 provides built-in form validation features, including setting minimum and
+            maximum lengths for text inputs and marking fields as required,without needing
+            JavaScript.
+            <br>
+            Minlength and maxlength attributes: These attributes control how many characters the user
+            must enter in a text input.
+            <br>
+            Required: This attribute forces the user to fill in the input before submitting the form.
+        </p>
+        <br />
+    </div>
+</body>
+
+</html>
